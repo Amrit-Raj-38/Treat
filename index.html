@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AAPKO TREAT NAHI MILEGA</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  h1 {
+    color: #333;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+
+  .ribbon {
+    width: 300px;
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+  }
+
+  .ribbon::before,
+  .ribbon::after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    display: block;
+    border: 5px solid #2980b9;
+  }
+
+  .ribbon::before {
+    top: 0;
+    left: 0;
+    border-bottom: 0;
+    border-right: 0;
+  }
+
+  .ribbon::after {
+    bottom: 0;
+    right: 0;
+    border-top: 0;
+    border-left: 0;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>AAPKO TREAT NAHI MILEGA</h1>
+  <div class="ribbon"></div>
+</div>
+</body>
+</html>
